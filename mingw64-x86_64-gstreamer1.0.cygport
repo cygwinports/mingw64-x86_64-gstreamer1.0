@@ -3,17 +3,12 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross gstreamer
 
 NAME="mingw64-x86_64-gstreamer1.0"
-VERSION=1.0.10
+VERSION=1.4.5
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GStreamer 1.0 core for Win64 toolchain"
 DESCRIPTION="The core library for the GStreamer multimedia framework. It
 contains the headers, core library files, and core elements."
-
-PATCH_URI="
-	http://pkgs.fedoraproject.org/cgit/mingw-gstreamer.git/plain/e2f2ee3582731fd52e5b93a0a82fdf6f4156bce2.patch
-	http://pkgs.fedoraproject.org/cgit/mingw-gstreamer.git/plain/e745a2bcf07eb7ecafcb92428b4d2907ff22b124.patch
-"
 
 src_compile() {
 	cd ${S}
