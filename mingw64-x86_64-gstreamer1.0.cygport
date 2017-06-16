@@ -3,7 +3,7 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross gstreamer
 
 NAME="mingw64-x86_64-gstreamer1.0"
-VERSION=1.10.4
+VERSION=1.10.5
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GStreamer 1.0 core for Win64 toolchain"
