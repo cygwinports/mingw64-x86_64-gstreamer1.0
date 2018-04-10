@@ -3,12 +3,14 @@ CROSS_HOST="x86_64-w64-mingw32"
 inherit cross gstreamer
 
 NAME="mingw64-x86_64-gstreamer1.0"
-VERSION=1.12.4
+VERSION=1.12.5
 RELEASE=1
 CATEGORY="Devel"
 SUMMARY="GStreamer 1.0 core for Win64 toolchain"
 DESCRIPTION="The core library for the GStreamer multimedia framework. It
 contains the headers, core library files, and core elements."
+
+DIFF_EXCLUDES+=" bash-completion"
 
 src_compile() {
 	cd ${S}
@@ -24,5 +26,3 @@ src_compile() {
 }
 
 MAKEOPTS+=" man_MANS= "
-
-KEEP_LA_FILES="none"
